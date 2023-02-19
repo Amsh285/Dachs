@@ -1,0 +1,16 @@
+.) What is the difference between git and github:
+	Versioncontrolsystem - online remote repository
+.) Name 3 benefits of a version control system:
+	- backups
+	- track changes
+	- simplified collaboration
+.) Name 3 alternatives to git:
+	- BitKeeper
+	- Darcs
+	- Fossil
+.) Name 2 differences between git and other version control systems::
+	- distributed
+	- cryptographic projecthistory 
+Name known issues related to game engines (Unreal, Unity) and version control systems:
+	- performance
+	- unity problems with external version control systems
