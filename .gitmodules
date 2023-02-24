@@ -1,0 +1,3 @@
+[submodule "Dachs/vendor/spdlog"]
+	path = Dachs/vendor/spdlog
+	url = https://github.com/gabime/spdlog

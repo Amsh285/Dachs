@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Dachs\Log.h" />
     <ClInclude Include="src\Dachs.h" />
     <ClInclude Include="src\Dachs\Application.h" />
     <ClInclude Include="src\Dachs\Core.h" />
     <ClInclude Include="src\Dachs\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Dachs\Log.cpp" />
     <ClCompile Include="src\Dachs\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -66,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>DS_PLATFORM_WINDOWS;DS_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dachs\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,6 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>DS_PLATFORM_WINDOWS;DS_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dachs\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
