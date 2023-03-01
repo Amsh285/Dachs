@@ -1,0 +1,11 @@
+.) Describe a logging system with your own words:
+	- System zur aufzeichnung von Ereignissen.
+.) What is the difference between git submodules and git subtrees:
+	- submodule: speichert einen link auf einen einzelnen commit
+	- subtree: speichert das komplette repository mit history
+.) What is a build system in C++? Name 3 build systems:
+	- cmake, premake, nmake, make
+	- automatisieren build prozesse
+.) What is a package manager in C++? Name 3 package manager:
+	- npm, nuget, pip, apt
+	- stellen dateien zum download über einen konsolen client bereit. 
