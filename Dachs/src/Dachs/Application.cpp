@@ -12,6 +12,9 @@ namespace Dachs
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1280, 720);
+		DS_CORE_TRACE(e.ToString());
+
 		while (true);
 	}
 }

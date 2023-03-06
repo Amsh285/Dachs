@@ -9,3 +9,5 @@
 #else
 	#error Platform not supported
 #endif // DS_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

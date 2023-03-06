@@ -4,6 +4,9 @@
     <Filter Include="Dachs">
       <UniqueIdentifier>{2866040D-947A-2CBE-5DFC-CF1DC9CF28EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dachs\Events">
+      <UniqueIdentifier>{0C9514B1-F8F7-A355-A17D-DC0B8DBF6FD8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Dachs.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Dachs\EntryPoint.h">
       <Filter>Dachs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dachs\Events\ApplicationEvent.h">
+      <Filter>Dachs\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dachs\Events\Event.h">
+      <Filter>Dachs\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dachs\Events\KeyEvent.h">
+      <Filter>Dachs\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dachs\Events\MouseEvent.h">
+      <Filter>Dachs\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Dachs\Log.h">
       <Filter>Dachs</Filter>
