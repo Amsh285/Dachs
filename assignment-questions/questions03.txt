@@ -1,0 +1,10 @@
+.) What is the difference between a dynamic linked library and a static library?
+	- static: linked at compiletime (better optimizations.
+	- dynamic: linked at runtime (slower).
+.) Describe a logging system with your own words:
+	- logs Messages to a stream (file, console).
+.) What is a Design Pattern?
+	- solutions to commonly occurring problems
+.) Name and describe 2 Design Patterns (except façade or adapter):
+	- factory: handles the construction of objects
+	- strategy: enables the selection of algorithms at runtime
