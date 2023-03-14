@@ -2,8 +2,7 @@
 
 #include "Core.h"
 #include "Events/Event.h"
-#include "Events/ApplicationEvent.h"
-#include "Log.h"
+#include "Window.h"
 
 namespace Dachs
 {
@@ -14,6 +13,9 @@ namespace Dachs
 		virtual ~Application();
 
 		void Run();
+	private:
+		std::unique_ptr<Window> m_window;
+		bool m_Running = true;
 	};
 
 	// define in client

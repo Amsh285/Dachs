@@ -1,0 +1,23 @@
+.) What is a precompiled header? Name pros and cons:
+	a precompiled header file. 
+	pro´s: faster buildtimes for frequently used but unmodified src files.
+	con´s: 
+		.) Super easy to bloat them. They aren't often kept up to date, people usually just keep adding crap to them.
+
+		.) Modify the header, EVERY SINGLE FILE needs to be recompiled. Huge problem on a large project Additional maintenance
+
+		.) Easy to introduce bugs where cpp files rely on the precompiled header that breaks in other areas
+
+		.) Inconsistent defines in a precompiled header could be missed by a build system and now you have a silently broken build that won't show issues until runtime. And when it does, it could be pretty random.
+
+		.) pre-compiled headers can cause issues if a compiler doesn't support it.
+
+The biggest issue is that, if the compiler doesn't support it and you just leave a #include "pch.h" in every file, you get all the downsides of a precompiled header for every single file in the project on every single compile...and none of the upsides. So maintenance becomes a problem.
+.) Describe the layer of abstraction with your own words:
+	Hides specific (and unnecessary) details from consumers
+.) Name the SOLID principles and describe them briefly:
+	S - Single-responsiblity Principle
+	O - Open-closed Principle
+	L - Liskov Substitution Principle
+	I - Interface Segregation Principle
+	D - Dependency Inversion Principle

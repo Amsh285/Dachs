@@ -10,6 +10,12 @@ workspace "Dachs"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Dachs/vendor/GLFW/include"
+
+include "Dachs/vendor/GLFW"
+
 project "Dachs"
 	location "Dachs"
 	kind "SharedLib"
@@ -30,7 +36,14 @@ project "Dachs"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

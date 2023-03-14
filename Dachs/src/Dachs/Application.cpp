@@ -5,6 +5,7 @@ namespace Dachs
 {
 	Application::Application()
 	{
+		m_window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -13,9 +14,9 @@ namespace Dachs
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		DS_CORE_TRACE(e.ToString());
-
-		while (true);
+		while (m_Running)
+		{
+			m_window->OnUpdate();
+		}
 	}
 }

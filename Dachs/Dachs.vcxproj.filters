@@ -35,6 +35,8 @@
       <Filter>Dachs</Filter>
     </ClInclude>
     <ClInclude Include="src\dspch.h" />
+    <ClInclude Include="src\Dachs\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Dachs\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Dachs</Filter>
     </ClCompile>
     <ClCompile Include="src\dspch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
