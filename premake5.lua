@@ -18,6 +18,9 @@ project "Dachs"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "dspch.h"
+	pchsource "Dachs/src/dspch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

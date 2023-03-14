@@ -1,3 +1,4 @@
+#include "dspch.h"
 #include "Log.h"
 
 namespace Dachs

@@ -1,9 +1,8 @@
 #pragma once
 
-#include <sstream>
+#include "dspch.h"
 
 #include "Event.h"
-
 
 namespace Dachs
 {

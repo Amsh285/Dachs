@@ -1,7 +1,6 @@
 #pragma once
 
-#include <string>
-#include <functional>
+#include "dspch.h"
 
 #include "Dachs/Core.h"
 
